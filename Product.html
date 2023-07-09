@@ -4,9 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-func.js"></script>
+    <title>Product</title>
+
+    <style>
+        .product{
+            padding-top: 150px;
+        }
+
+        .name-product{
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+            align-self: center;
+            display: flex;
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="shell">
+        <div id="header">
+            <h1 id="logo">GALAXY CINEMA</h1>
+            <div id="navigation">
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="active" href="Product.html">PRODUCT</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+            
+          </div>
+
+          <div id="main">
+            <div id="content">
+              <div class="box product rol">
+                    <div class="movie-image"> <span class="play"><span class="name"></span></span> <a href="#"><img src="https://i.ebayimg.com/images/g/iKEAAOSwcRBkZRh5/s-l1600.jpg" alt="" /></a> </div>
+                    <div class="name-product">
+                        <p>Disney Little Mermaid
+                        <br>Price 1$</p>
+                    </div>
+                </div>
+
+                <div class="box product rol">
+                    <div class="movie-image"> <span class="play"><span class="name"></span></span> <a href="#"><img src="https://cdn.shopify.com/s/files/1/0311/4087/2324/products/vintage-star-wars-coca-cola-non-toy-coca-cola-theatre-cup-29818696892548_1024x1024@2x.jpg?v=1645221160" alt="" /></a> </div>
+                    <div class="name-product">
+                        <p>Coca-Cola Star Wars Theater Cup
+                        <br>Price 2$</p>
+                    </div>
+                </div>
+
+                <div class="box product rol">
+                    <div class="movie-image"> <span class="play"><span class="name"></span></span> <a href="#"><img src="data:image/jpeg;base64,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" alt="" /></a> </div>
+                    <div class="name-product">
+                        <p>Wonder Woman 1984 2020 
+                        <br>Price 3$</p>
+                    </div>
+                </div>
+
+                
+    </div>
 </body>
 </html>
